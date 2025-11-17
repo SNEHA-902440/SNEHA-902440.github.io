@@ -1,31 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SNEHA — Portfolio</title>
   <meta name="description" content="Sneha — CSE Student, AI/Automation enthusiast. Contact: sneha902440@gmail.com" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAV -->
   <header class="nav-wrap">
-    <nav class="nav container">
+    <div class="container nav">
       <a class="brand" href="#hero">SNEHA</a>
 
-      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle nav" aria-expanded="false">
         <span class="hamburger"></span>
       </button>
 
-      <ul class="nav-links" id="navLinks">
+      <ul id="navLinks" class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
-        <li class="dropdown">
+        <li class="has-dropdown">
           <a href="#more" class="dropbtn">More ▾</a>
-          <ul class="dropdown-content">
+          <ul class="dropdown">
             <li><a href="#contact">Contact</a></li>
             <li><a href="#footer">Quick Actions</a></li>
           </ul>
@@ -34,44 +34,41 @@
 
       <div class="socials">
         <a class="icon" href="https://github.com/SNEHA-902440" target="_blank" rel="noopener" aria-label="GitHub">
-          <!-- GitHub SVG -->
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.73.5.9 5.34.9 11.61c0 4.66 3.01 8.61 7.19 10.01.53.1.72-.23.72-.51 0-.25-.01-.91-.01-1.78-2.92.64-3.54-1.4-3.54-1.4-.48-1.23-1.17-1.56-1.17-1.56-.96-.66.07-.65.07-.65 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.06.88.09-.69.37-1.15.67-1.41-2.33-.27-4.78-1.17-4.78-5.21 0-1.15.41-2.09 1.08-2.83-.11-.27-.47-1.36.1-2.84 0 0 .88-.28 2.88 1.08A9.9 9.9 0 0112 6.85c.89.01 1.79.12 2.63.35 2-.36 2.88-1.08 2.88-1.08.57 1.48.21 2.57.1 2.84.67.74 1.08 1.68 1.08 2.83 0 4.05-2.46 4.93-4.8 5.19.38.33.72.97.72 1.96 0 1.41-.01 2.55-.01 2.9 0 .28.19.62.73.51C19.09 20.22 22.1 16.27 22.1 11.61 22.1 5.34 17.27.5 12 .5z"></path></svg>
         </a>
         <a class="icon" href="https://www.linkedin.com/in/sneha-15940b353/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <!-- LinkedIn SVG -->
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48s.88 1.98 1.98 1.98S6.96 6.58 6.96 5.48 6.06 3.5 4.98 3.5zM3 21h4V9H3v12zM9 21h4v-6.2c0-3.47 4.5-3.74 4.5 0V21h4v-7.6c0-6.88-7.5-6.62-9.5-3.24V9H9v12z"></path></svg>
         </a>
         <a class="icon" href="https://x.com/sneha902440" target="_blank" rel="noopener" aria-label="X">
-          <!-- X (Twitter) SVG -->
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22 5.92c-.66.3-1.37.5-2.13.59.77-.46 1.36-1.18 1.64-2.04-.72.43-1.52.75-2.36.92A4.01 4.01 0 0016.5 4c-2.22 0-4.02 1.8-4.02 4.02 0 .31.03.62.1.91C8.36 9.8 5.3 7.9 3.12 5.03c-.34.58-.54 1.25-.54 1.97 0 1.36.69 2.56 1.74 3.26-.64-.02-1.25-.2-1.78-.5v.05c0 1.9 1.35 3.49 3.13 3.85-.33.09-.67.14-1.02.14-.25 0-.5-.02-.74-.07.5 1.56 1.95 2.7 3.66 2.73A8.06 8.06 0 012 19.54a11.38 11.38 0 006.16 1.8c7.4 0 11.45-6.13 11.45-11.44v-.52A7.94 7.94 0 0022 5.92z"></path></svg>
         </a>
       </div>
-    </nav>
+    </div>
   </header>
 
   <!-- HERO -->
   <section id="hero" class="hero">
     <div class="container hero-grid">
       <div class="hero-left">
-        <h2 class="hi">Hello — I'm</h2>
-        <h1 class="name">SNEHA</h1>
-        <p class="tag">Enthusiastic learner • B.Tech CSE from Guru Gobind Singh Indraprastha University, New Delhi • Curious about AI & Automation • 2nd Year, MSIT</p>
+        <h3 class="hi">Hello — I'm</h3>
+        <h1 class="name">SNEHA <span class="dot">•</span></h1>
+        <p class="tag">Enthusiastic learner • B.Tech CSE (MSIT) • AI & Automation curious • 2nd year • MSIT's AI/ML chapter & E-yantra software dept</p>
 
         <div class="hero-cta">
           <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn outline" href="#contact">Contact Me</a>
+          <a class="btn outline" href="#contact">Contact</a>
         </div>
 
-        <p class="small-note">open to learn something innovative  • As a 2nd year student , I'm part of the AI/ML dept. of Microsoft Student chapter (MSIT) & E-yantra( Robotic Society) Software dept</p>
+        <p class="small-note">
+          I love learning, building, and contributing — currently exploring Generative AI, automation, and real-world projects.
+          Open to internships and collaborative projects.
+        </p>
       </div>
 
       <div class="hero-right">
-        <!-- Profile photo -->
-        <!-- NOTE: Replace the src below with the image you upload to the repo (e.g. /assets/profile.jpg) 
-             The provided Google Photos link often requires auth; best to upload a copy to your repo
-        -->
         <div class="avatar-wrap">
-          <img class="avatar" src="https://via.placeholder.com/320x320.png?text=Profile" alt="Sneha profile photo">
+          <!-- profile.jpg in repo root -->
+          <img class="avatar" src="/profile.jpg" alt="Sneha profile photo">
         </div>
       </div>
     </div>
@@ -81,7 +78,7 @@
   <section id="about" class="section container">
     <h2>About</h2>
     <p class="lead">
-      Driven by curiosity and creativity, I love turning ideas into impactful tech solutions. As a 2nd-year CSE student at MSIT (GGSIPU), I explore AI, automation, and real-world problem-solving while continuously sharpening my skills towards being a developer.
+      I love learning new things and enhancing my skills to contribute to the tech field. Currently a 2nd-year B.Tech CSE student at Maharaja Surajmal Institute of Technology (affiliated to GGSIPU), New Delhi. I build projects around AI & automation, take part in MSIT's AI/ML chapter and the E-yantra software team, and enjoy turning ideas into simple, useful tools.
     </p>
   </section>
 
@@ -91,9 +88,9 @@
     <div class="chips">
       <span class="chip">C</span>
       <span class="chip">C++</span>
-      <span class="chip">OOPs in CPP</span>
+      <span class="chip">OOP (C++)</span>
       <span class="chip">Python</span>
-      <span class="chip">DSA(Basics)</span>
+      <span class="chip">DSA (Basics)</span>
       <span class="chip">Machine Learning</span>
       <span class="chip">GenAI (Basics)</span>
       <span class="chip">Prompt Engineering</span>
@@ -104,25 +101,36 @@
   <!-- PROJECTS -->
   <section id="projects" class="section container">
     <h2>Projects</h2>
-
     <div class="project-grid">
       <article class="project-card">
-        <h3>Handwritten Digitisation</h3>
-        <p>End-to-end pipeline for digitising handwritten answers using VLM-qwen, pre-processing & layout analysis.</p>
-        <p class="meta">Technologies: Python, qwen2.5-VL-72b-instruct model, VLM </p>
+        <div class="project-head">
+          <span class="pill">Handwritten Digitisation</span>
+          <button class="project-toggle" aria-expanded="false">▾</button>
+        </div>
+        <div class="project-body">
+          <p>End-to-end pipeline for digitising handwritten answers using VLM models and layout analysis — pre-processing, segmentation, and text extraction + formatting for evaluation.</p>
+          <p class="meta">Technologies: Python, qwen2.5-VL / VLM, layout analysis</p>
+        </div>
       </article>
 
       <article class="project-card">
-        <h3>Break Even Analyser <span class="tag-small">group project</span></h3>
-        <p>Collaborative group project — financial breakeven analysis tool (UI & logic built by project team).</p>
-        <p class="meta">Role: Contributor (group project)</p>
+        <div class="project-head">
+          <span class="pill">Break Even Analyser <small class="tag-small">group</small></span>
+          <button class="project-toggle" aria-expanded="false">▾</button>
+        </div>
+        <div class="project-body">
+          <p>Group project — financial break-even analysis web UI + logic. Role: contributor (group work).</p>
+        </div>
       </article>
 
       <article class="project-card">
-        <h3>Hospital Appointment System <span class="tag-small">group project</span></h3>
-        <p>Group project for appointment booking and scheduling using data structures - tree for diagnosis and priority queue to handle the urgencies in hospitals, Added GUI for user friendly interface. (built in collaboration).</p>
-        <p class="meta">Role: Collaborator</p>
-        <p class="meta">Technologies: HTML-CSS for frontend, flask, CPP-logic for backend</p>
+        <div class="project-head">
+          <span class="pill">Hospital Appointment System <small class="tag-small">group</small></span>
+          <button class="project-toggle" aria-expanded="false">▾</button>
+        </div>
+        <div class="project-body">
+          <p>Collaborative project focusing on booking & scheduling using data structures and a simple Flask UI. Role: collaborator.</p>
+        </div>
       </article>
     </div>
   </section>
@@ -132,20 +140,19 @@
     <h2>Education</h2>
     <div class="edu-grid">
       <div class="edu-card">
-        <h4>Guru Gobind Singh Indraprastha University, New Delhi</h4>
+        <h4>Guru Gobind Singh Indraprastha University (MSIT)</h4>
         <p>B.Tech — Computer Science & Engineering • 2nd Year</p>
         <p class="meta">1st year CGPA: 9.56</p>
       </div>
 
       <div class="edu-card">
         <h4>Rao Pahlad Singh Sr. Sec. School</h4>
-        <p>12th — Science (Maths) • Percentage: 88.8%</p>
+        <p>12th — Percentage: 88.8%</p>
       </div>
 
       <div class="edu-card">
         <h4>Ram Prasad Bohara Public School</h4>
-        <p>10th — Percentage: 97.2%</p>
-        <p class="meta">Jhunjhunun, Rajasthan</p>
+        <p>10th — Percentage: 97.2% (Jhunjhunun, Rajasthan)</p>
       </div>
     </div>
   </section>
@@ -157,21 +164,17 @@
       <div>
         <p><strong>Email</strong></p>
         <p><a href="mailto:sneha902440@gmail.com">sneha902440@gmail.com</a></p>
-
         <p><strong>Location</strong></p>
         <p>New Delhi, India</p>
 
         <p><strong>Quick links</strong></p>
-        <p class="small">
-          <a href="https://github.com/SNEHA-902440" target="_blank" rel="noopener">GitHub</a> •
-          <a href="https://www.linkedin.com/in/sneha-15940b353/" target="_blank" rel="noopener">LinkedIn</a> •
-          <a href="https://x.com/sneha902440" target="_blank" rel="noopener">X</a>
-        </p>
+        <p class="small"><a href="https://github.com/SNEHA-902440" target="_blank" rel="noopener">GitHub</a> • <a href="https://www.linkedin.com/in/sneha-15940b353/" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://x.com/sneha902440" target="_blank" rel="noopener">X</a></p>
       </div>
 
       <div>
-        <p class="lead">Want to work together or have questions?</p>
+        <p class="lead">Want to collaborate or have questions?</p>
         <a class="btn primary" href="mailto:sneha902440@gmail.com">Email Me</a>
+        <button id="copyEmail" class="btn outline">Copy Email</button>
       </div>
     </div>
   </section>
@@ -180,36 +183,52 @@
   <footer id="footer" class="footer">
     <div class="container footer-grid">
       <p>Built with ❤️ • SNEHA</p>
-      <p class="muted">Profile photo: replace placeholder with uploaded image (recommended path: /assets/profile.jpg)</p>
+      <p class="muted">Profile photo: <code>/profile.jpg</code></p>
     </div>
   </footer>
 
-  <script>
-    // Smooth scroll behavior (also set in CSS with scroll-behavior)
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', function(e){
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({behavior:'smooth', block:'start'});
-          // close nav on mobile
-          const nav = document.getElementById('navLinks');
-          if (nav.classList.contains('open')) nav.classList.remove('open');
-        }
-      });
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!expanded));
+    navLinks.classList.toggle('open');
+  });
+
+  // Project card toggles
+  document.querySelectorAll('.project-toggle').forEach(btn=>{
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      const body = btn.closest('.project-card').querySelector('.project-body');
+      body.classList.toggle('open');
+      btn.textContent = body.classList.contains('open') ? '▴' : '▾';
     });
+  });
 
-    // Mobile nav toggle
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+  // copy email
+  document.getElementById('copyEmail').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText('sneha902440@gmail.com');
+      const b = document.getElementById('copyEmail');
+      b.textContent = 'Copied ✓';
+      setTimeout(()=> b.textContent = 'Copy Email', 1600);
+    } catch (e) { alert('Could not copy email.'); }
+  });
+
+  // Smooth anchor scrolling (redundant if CSS handles it)
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', function(e){
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        navLinks.classList.remove('open');
+      }
     });
-
-    // Replace avatar src if you used a Google Photos link which needs auth:
-    // Recommended: upload a file to repo and change src to "/assets/profile.jpg"
-  </script>
-
+  });
+</script>
 </body>
 </html>
-
