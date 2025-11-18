@@ -17,8 +17,6 @@
         <span></span>
     </button>
 
-    <div class="outer-frame">
-
     <aside class="sidebar" id="sidebar">   
 
         <nav class="side-nav">
@@ -29,6 +27,9 @@
             <a href="#contact">Contact</a>
         </nav>
     </aside>
+
+    <div class="outer-frame">
+
     <!-- HERO SECTION -->
     <header class="hero">
         <div class="left-profile">
@@ -203,6 +204,15 @@
         navigator.clipboard.writeText("sneha902440@gmail.com");
         document.getElementById("copy-email").textContent = "Copied!";
     });
+
+    // Mobile sidebar toggle
+    const burger = document.getElementById("hamburger");
+    const slidebar = document.getElementById("sidebar");
+
+    burger.addEventListener("click", () => {
+        slidebar.classList.toggle("open");
+    });
+
 
     </script>
 
