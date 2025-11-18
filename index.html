@@ -1,519 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SNEHA — Portfolio</title>
-  <meta name="description" content="Sneha — CSE Student, AI/Automation enthusiast. Contact: sneha902440@gmail.com" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneha • Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Background Effects -->
-  <div class="bg-gradient"></div>
-  <div class="bg-particles"></div>
-
-  <!-- NAVBAR -->
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <a class="brand" href="#hero">
-        <span class="brand-text">SNEHA</span>
-        <span class="brand-accent">.</span>
-      </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-      </button>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li class="dropdown">
-          <a href="#more" class="dropbtn nav-link">More ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#footer">Quick Actions</a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <div class="socials">
-        <a class="icon" href="https://github.com/SNEHA-902440" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-            <path d="M12 .5C5.73.5.9 5.34.9 11.61c0 4.66 3.01 8.61 7.19 10.01.53.1.72-.23.72-.51 0-.25-.01-.91-.01-1.78-2.92.64-3.54-1.4-3.54-1.4-.48-1.23-1.17-1.56-1.17-1.56-.96-.66.07-.65.07-.65 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.06.88.09-.69.37-1.15.67-1.41-2.33-.27-4.78-1.17-4.78-5.21 0-1.15.41-2.09 1.08-2.83-.11-.27-.47-1.36.1-2.84 0 0 .88-.28 2.88 1.08A9.9 9.9 0 0112 6.85c.89.01 1.79.12 2.63.35 2-.36 2.88-1.08 2.88-1.08.57 1.48.21 2.57.1 2.84.67.74 1.08 1.68 1.08 2.83 0 4.05-2.46 4.93-4.8 5.19.38.33.72.97.72 1.96 0 1.41-.01 2.55-.01 2.9 0 .28.19.62.73.51C19.09 20.22 22.1 16.27 22.1 11.61 22.1 5.34 17.27.5 12 .5z"></path>
-          </svg>
-        </a>
-        <a class="icon" href="https://www.linkedin.com/in/sneha-15940b353/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-            <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48s.88 1.98 1.98 1.98S6.96 6.58 6.96 5.48 6.06 3.5 4.98 3.5zM3 21h4V9H3v12zM9 21h4v-6.2c0-3.47 4.5-3.74 4.5 0V21h4v-7.6c0-6.88-7.5-6.62-9.5-3.24V9H9v12z"></path>
-          </svg>
-        </a>
-        <a class="icon" href="https://x.com/sneha902440" target="_blank" rel="noopener" aria-label="X">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-            <path d="M22 5.92c-.66.3-1.37.5-2.13.59.77-.46 1.36-1.18 1.64-2.04-.72.43-1.52.75-2.36.92A4.01 4.01 0 0016.5 4c-2.22 0-4.02 1.8-4.02 4.02 0 .31.03.62.1.91C8.36 9.8 5.3 7.9 3.12 5.03c-.34.58-.54 1.25-.54 1.97 0 1.36.69 2.56 1.74 3.26-.64-.02-1.25-.2-1.78-.5v.05c0 1.9 1.35 3.49 3.13 3.85-.33.09-.67.14-1.02.14-.25 0-.5-.02-.74-.07.5 1.56 1.95 2.7 3.66 2.73A8.06 8.06 0 012 19.54a11.38 11.38 0 006.16 1.8c7.4 0 11.45-6.13 11.45-11.44v-.52A7.94 7.94 0 0022 5.92z"></path>
-          </svg>
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <div class="hero-badge">
-          <span class="badge-text">Available for opportunities</span>
+    <header class="hero">
+        <div class="profile-img">
+            <img src="assets/profile.jpg" alt="Sneha">
         </div>
-        <h2 class="hi">
-          <span class="greeting">Hello</span>
-          <span class="wave">👋</span>
-          <span class="greeting">— I'm</span>
-        </h2>
-        <h1 class="name">
-          <span class="name-text">SNEHA</span>
-          <span class="cursor-blink">|</span>
-        </h1>
-        <p class="tag">
-          Enthusiastic learner • B.Tech CSE from Guru Gobind Singh Indraprastha University, New Delhi • 
-          Curious about AI & Automation • 2nd Year, MSIT
+        <h1 class="name">SNEHA</h1>
+        <p class="subtitle">Tech Explorer • AI/ML Enthusiast • Automation & Problem-Solving</p>
+        <p class="bio">
+            Driven by curiosity and creativity, I love turning ideas into impactful tech solutions.  
+            As a 2nd-year CSE student at MSIT (GGSIPU), I explore AI, automation, and real-world problem-solving while sharpening my skills.
+            Member of: <strong>AI/ML Dept.(Microsoft Student Chapter) MSIT</strong> & <strong>  E-yantra (Robotic Society) Software Dept.</strong>.
         </p>
-
-        <div class="hero-cta">
-          <a class="btn primary" href="#projects">
-            <span>View Projects</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
-          <a class="btn outline" href="#contact">
-            <span>Contact Me</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-          </a>
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank">🐙 GitHub</a>
+            <a href="https://linkedin.com/" target="_blank">💼 LinkedIn</a>
+            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a>
         </div>
-
-        <div class="hero-stats">
-          <div class="stat-item">
-            <div class="stat-number">2nd</div>
-            <div class="stat-label">Year Student</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">9.56</div>
-            <div class="stat-label">CGPA</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">3+</div>
-            <div class="stat-label">Projects</div>
-          </div>
-        </div>
-
-        <p class="small-note">
-          <span class="highlight">Open to learn something innovative</span> • As a 2nd year student, I'm part of the 
-          AI/ML dept. of Microsoft Student chapter (MSIT) & E-yantra (Robotic Society) Software dept
+    </header>
+    <!-- ABOUT -->
+    <section class="section">
+        <h2>• About</h2>
+        <p>
+            Enthusiastic learner • B.Tech CSE from Guru Gobind Singh Indraprastha University, New Delhi • Curious about AI & Automation • 
+            2nd Year, MSIT • Always open to learning something innovative and exploring automation, AI systems, and practical development.
         </p>
-      </div>
-
-      <div class="hero-right">
-        <div class="avatar-wrap">
-          <div class="avatar-glow"></div>
-          <div class="avatar-border"></div>
-          <img class="avatar" src="profile.jpg" alt="Sneha profile photo">
-          <div class="avatar-decoration"></div>
-        </div>
-        <div class="floating-elements">
-          <div class="float-element float-1">🚀</div>
-          <div class="float-element float-2">💻</div>
-          <div class="float-element float-3">🤖</div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="mouse"></div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section container">
-    <div class="section-header">
-      <span class="section-number">01</span>
-      <h2>About</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="about-content">
-      <p class="lead">
-        Driven by curiosity and creativity, I love turning ideas into impactful tech solutions. 
-        As a 2nd-year CSE student at MSIT (GGSIPU), I explore AI, automation, and real-world 
-        problem-solving while continuously sharpening my skills towards being a developer.
-      </p>
-      <div class="about-highlights">
-        <div class="highlight-card">
-          <div class="highlight-icon">🎯</div>
-          <h3>Goal-Oriented</h3>
-          <p>Focused on building practical solutions</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🔬</div>
-          <h3>Research-Driven</h3>
-          <p>Exploring AI & Automation technologies</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🤝</div>
-          <h3>Collaborative</h3>
-          <p>Active in student communities & projects</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section alt container">
-    <div class="section-header">
-      <span class="section-number">02</span>
-      <h2>Skills</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="skills-content">
-      <p class="section-intro">Technologies and tools I work with</p>
-      <div class="chips">
-        <span class="chip" data-skill="C">C</span>
-        <span class="chip" data-skill="C++">C++</span>
-        <span class="chip" data-skill="OOPs">OOPs in CPP</span>
-        <span class="chip" data-skill="Python">Python</span>
-        <span class="chip" data-skill="DSA">DSA (Basics)</span>
-        <span class="chip" data-skill="ML">Machine Learning</span>
-        <span class="chip" data-skill="GenAI">GenAI (Basics)</span>
-        <span class="chip" data-skill="Prompt">Prompt Engineering</span>
-        <span class="chip" data-skill="Automation">Automation Scripting</span>
-      </div>
-      <div class="skills-categories">
-        <div class="category-card">
-          <h3>Programming</h3>
-          <div class="category-items">
+    </section>
+    <!-- SKILLS -->
+    <section class="section">
+        <h2>• Skills</h2>
+        <div class="skills">
             <span>C</span>
             <span>C++</span>
-            <span>Python</span>
-          </div>
-        </div>
-        <div class="category-card">
-          <h3>AI/ML</h3>
-          <div class="category-items">
-            <span>Machine Learning</span>
+            <span>OOP in C++</span>
+            <span>DSA (Basics)</span>
             <span>GenAI</span>
             <span>Prompt Engineering</span>
-          </div>
+            <span>LLMs</span>
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Automation Scripting</span>
         </div>
-        <div class="category-card">
-          <h3>Core Concepts</h3>
-          <div class="category-items">
-            <span>OOPs</span>
-            <span>DSA</span>
-            <span>Automation</span>
-          </div>
+    </section>
+    <!-- PROJECTS -->
+    <section class="section">
+        <h2>• Projects</h2>
+        <div class="project-card">
+            <div class="project-header">
+                <span class="tag">Handwritten Digitisation</span>
+                <button class="dropdown-btn" aria-label="Toggle Handwritten Digitisation details">▼</button>
+            </div>
+            <div class="project-content">
+                End-to-end pipeline for digitising handwritten answers using VLM-Qwen, with preprocessing and layout analysis to handle varied handwriting styles and answer formats.<br><br>
+                <strong>Tech:</strong> Python, Qwen2.5-VL-72B, VLMs, AI/ML  
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section container">
-    <div class="section-header">
-      <span class="section-number">03</span>
-      <h2>Projects</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="projects-content">
-      <p class="section-intro">Some of my recent work</p>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-header">
-            <div class="project-icon">📝</div>
-            <div class="project-links">
-              <span class="project-badge">Featured</span>
+        <div class="project-card">
+            <div class="project-header">
+                <span class="tag">Break Even Analyser</span>
+                <button class="dropdown-btn" aria-label="Toggle Break Even Analyser details">▼</button>
             </div>
-          </div>
-          <h3>Handwritten Digitisation</h3>
-          <p>End-to-end pipeline for digitising handwritten answers using VLM-qwen, pre-processing & layout analysis.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">qwen2.5-VL-72b</span>
-            <span class="tech-tag">VLM</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-type">AI/ML Project</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-header">
-            <div class="project-icon">📊</div>
-            <div class="project-links">
-              <span class="project-badge group">Group Project</span>
+            <div class="project-content">
+                A GUI-based project to find the point where revenue and cost become equal (no profit, no loss) using revenue and cost equations and computation methods.<br><br>
+                The tool lets users input parameters, visualises how revenue and cost change, and computes the breakeven point programmatically.<br><br>
+                <strong>Tech:</strong> C++ for backend logic, HTML &amp; CSS for the frontend UI, Flask for connecting frontend and backend, and computational methods for finding the breakeven point.<br>
+                <strong>Role:</strong> Contributor
             </div>
-          </div>
-          <h3>Break Even Analyser</h3>
-          <p>Collaborative group project — financial breakeven analysis tool (UI & logic built by project team).</p>
-          <div class="project-tech">
-            <span class="tech-tag">Collaboration</span>
-            <span class="tech-tag">Finance</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-type">Role: Contributor</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-header">
-            <div class="project-icon">🏥</div>
-            <div class="project-links">
-              <span class="project-badge group">Group Project</span>
-            </div>
-          </div>
-          <h3>Hospital Appointment System</h3>
-          <p>Group project for appointment booking and scheduling using data structures - tree for diagnosis and priority queue to handle the urgencies in hospitals, Added GUI for user friendly interface. (built in collaboration).</p>
-          <div class="project-tech">
-            <span class="tech-tag">HTML/CSS</span>
-            <span class="tech-tag">Flask</span>
-            <span class="tech-tag">C++</span>
-            <span class="tech-tag">DSA</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-type">Role: Collaborator</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="section alt container">
-    <div class="section-header">
-      <span class="section-number">04</span>
-      <h2>Education</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="edu-content">
-      <div class="edu-timeline">
-        <div class="edu-card">
-          <div class="edu-year">2023 - Present</div>
-          <div class="edu-content-inner">
-            <h4>Guru Gobind Singh Indraprastha University, New Delhi</h4>
-            <p class="edu-degree">B.Tech — Computer Science & Engineering • 2nd Year</p>
-            <div class="edu-meta">
-              <span class="gpa-badge">CGPA: 9.56</span>
-              <span class="edu-location">📍 New Delhi</span>
-            </div>
-          </div>
         </div>
-
-        <div class="edu-card">
-          <div class="edu-year">2021 - 2022</div>
-          <div class="edu-content-inner">
-            <h4>Rao Pahlad Singh Sr. Sec. School, M.Garh, Haryana</h4>
-            <p class="edu-degree">12th — Science (Maths)</p>
-            <div class="edu-meta">
-              <span class="gpa-badge">Percentage: 88.8%</span>
+        <div class="project-card">
+            <div class="project-header">
+                <span class="tag">Hospital Appointment System</span>
+                <button class="dropdown-btn" aria-label="Toggle Hospital Appointment System details">▼</button>
             </div>
-          </div>
+            <div class="project-content">
+                Hospital appointment booking and scheduling system that uses trees for diagnosis flow and priority queues to manage urgent cases efficiently. Patients can also view their position in the queue for transparency.<br><br>
+                The system focuses on managing different urgency levels, mapping symptoms to possible diagnoses, and maintaining a smooth experience through a user-friendly interface.<br><br>
+                <strong>Tech:</strong> HTML &amp; CSS for the frontend, Flask for server-side handling, C++ for core logic, Priority Queue and Tree data structures for scheduling and diagnosis.<br>
+                <strong>Role:</strong> Collaborator
+            </div>
         </div>
-
-        <div class="edu-card">
-          <div class="edu-year">2019 - 2020</div>
-          <div class="edu-content-inner">
-            <h4>Ram Prasad Bohara Public School, Jhunjhunun, Rajasthan</h4>
-            <p class="edu-degree">10th</p>
-            <div class="edu-meta">
-              <span class="gpa-badge">Percentage: 97.2%</span>
-            </div>
-          </div>
+    </section>
+    <!-- EDUCATION -->
+    <section class="section">
+        <h2>• Education</h2>
+        <div class="edu-block">
+            <h3>B.Tech — Guru Gobind Singh Indraprastha University, New Delhi</h3>
+            <p>• 2nd Year • Computer Science Engineering</p>
+            <p>• Building strong foundations in programming, software engineering, and modern technologies.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section container">
-    <div class="section-header">
-      <span class="section-number">05</span>
-      <h2>Contact</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="contact-content">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Let's Connect</h3>
-          <p class="contact-lead">Want to work together or have questions? I'd love to hear from you!</p>
-          
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon">📧</div>
-              <div>
-                <p class="contact-label">Email</p>
-                <p><a href="mailto:sneha902440@gmail.com" class="contact-link">sneha902440@gmail.com</a></p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">📍</div>
-              <div>
-                <p class="contact-label">Location</p>
-                <p>New Delhi, India</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">🔗</div>
-              <div>
-                <p class="contact-label">Quick Links</p>
-                <div class="contact-socials">
-                  <a href="https://github.com/SNEHA-902440" target="_blank" rel="noopener" class="social-link">GitHub</a>
-                  <span class="separator">•</span>
-                  <a href="https://www.linkedin.com/in/sneha-15940b353/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
-                  <span class="separator">•</span>
-                  <a href="https://x.com/sneha902440" target="_blank" rel="noopener" class="social-link">X</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="edu-block">
+            <h3>Senior Secondary Education</h3>
+            <p>• Science Stream • Completed</p>
+            <p>• Passed with 88.8%</p>
+            <p>• Completed higher secondary education with focus on Mathematics and Science, preparing for engineering and technical fields.</p>
         </div>
-
-        <div class="contact-cta">
-          <div class="cta-card">
-            <h3>Ready to collaborate?</h3>
-            <p>Let's build something amazing together!</p>
-            <a class="btn primary large" href="mailto:sneha902440@gmail.com">
-              <span>Send Email</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </a>
-          </div>
+        <div class="edu-block">
+            <h3>Secondary Education</h3>
+            <p>• Completed</p>
+            <p>• Passed with 97.2%</p>
+            <p>• Achieved excellent academic performance with strong interest in technology and problem-solving.</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+    <!-- CONTACT -->
+    <section class="section">
+        <h2>• Contact</h2>
+        <p>
+            Email: <strong id="email-text">sneha902440@gmail.com</strong>
+            <button id="copy-email" class="copy-btn" type="button">Copy Email</button>
+        </p>
+        <p>Location: <strong>New Delhi, India</strong></p>
+        <div class="contact-links">
+            <a href="https://github.com/SNEHA-902440" target="_blank" rel="noopener">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/sneha-15940b353/" target="_blank" rel="noopener">💼 LinkedIn</a>
+            <a href="https://x.com/sneha902440" target="_blank" rel="noopener">🐦 X (Twitter)</a>
+        </div>
+    </section>
+<script>
+    // Project dropdown: toggle when clicking on header or button
+    document.querySelectorAll(".project-card").forEach(card => {
+        const header = card.querySelector(".project-header");
+        const button = card.querySelector(".dropdown-btn");
+        const content = card.querySelector(".project-content");
 
-  <!-- FOOTER -->
-  <footer id="footer" class="footer">
-    <div class="container footer-grid">
-      <div class="footer-content">
-        <p class="footer-text">Built with <span class="heart">❤️</span> by <strong>SNEHA</strong></p>
-        <p class="footer-note">© 2024. All rights reserved.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#hero" class="footer-link">Back to Top</a>
-        <span class="footer-separator">•</span>
-        <a href="#contact" class="footer-link">Contact</a>
-      </div>
-    </div>
-  </footer>
+        if (!header || !content) return;
 
-  <script>
-    // Smooth scroll behavior
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if (href === '#') return;
-        
-        const target = document.querySelector(href);
-        if (target) {
-          e.preventDefault();
-          const headerOffset = 80;
-          const elementPosition = target.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        const toggle = () => {
+            content.classList.toggle("show");
+        };
 
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
+        header.addEventListener("click", (e) => {
+            e.stopPropagation();
+            toggle();
+        });
 
-          // Close nav on mobile
-          const nav = document.getElementById('navLinks');
-          if (nav.classList.contains('open')) nav.classList.remove('open');
+        if (button) {
+            button.addEventListener("click", (e) => {
+                e.stopPropagation();
+                toggle();
+            });
         }
-      });
     });
 
-    // Mobile nav toggle
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      navToggle.classList.toggle('active');
-    });
-
-    // Scroll animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.project-card, .edu-card, .highlight-card, .category-card').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Navbar scroll effect
-    let lastScroll = 0;
-    const navWrap = document.querySelector('.nav-wrap');
-    
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      
-      if (currentScroll > 100) {
-        navWrap.classList.add('scrolled');
-      } else {
-        navWrap.classList.remove('scrolled');
-      }
-      
-      lastScroll = currentScroll;
-    });
-
-    // Skill chips animation
-    document.querySelectorAll('.chip').forEach((chip, index) => {
-      chip.style.animationDelay = `${index * 0.1}s`;
-    });
-
-    // Parallax effect for hero
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      const hero = document.querySelector('.hero');
-      if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        hero.style.opacity = 1 - scrolled / 600;
-      }
-    });
-
-    // Typing effect for name (optional enhancement)
-    const nameElement = document.querySelector('.name-text');
-    if (nameElement) {
-      const text = nameElement.textContent;
-      nameElement.textContent = '';
-      let i = 0;
-      const typeWriter = () => {
-        if (i < text.length) {
-          nameElement.textContent += text.charAt(i);
-          i++;
-          setTimeout(typeWriter, 100);
-        }
-      };
-      setTimeout(typeWriter, 500);
+    // Copy email to clipboard
+    const copyBtn = document.getElementById("copy-email");
+    const emailText = document.getElementById("email-text");
+    if (copyBtn && emailText && navigator.clipboard) {
+        copyBtn.addEventListener("click", () => {
+            navigator.clipboard.writeText(emailText.textContent.trim())
+                .then(() => {
+                    const original = copyBtn.textContent;
+                    copyBtn.textContent = "Copied!";
+                    copyBtn.classList.add("copied");
+                    setTimeout(() => {
+                        copyBtn.textContent = original;
+                        copyBtn.classList.remove("copied");
+                    }, 1800);
+                })
+                .catch(err => console.error("Failed to copy email", err));
+        });
     }
-  </script>
+</script>
 </body>
 </html>
