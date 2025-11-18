@@ -351,45 +351,73 @@ body {
 
 /*RESPONSIVE (Mobile View)*/
 @media (max-width: 900px) {
-    body {
-        padding-left: 0;
-    }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .right-intro {
-        padding-right: 0;
-    }
-       
+    /* Sidebar becomes mobile floating panel */
     .sidebar {
-        left: -260px !important;
+        left: -270px !important;
         width: 260px;
-        background: #0d0b15;
-        padding: 60px 25px;
-        border-right: 2px solid rgba(183,138,255,0.3);
-        transition: 0.4s ease;
+        height: 100vh;
+        background: rgba(13, 11, 21, 0.65); /* translucent glass */
+        backdrop-filter: blur(10px);
+        padding: 80px 30px;
+        border-right: none !important; /* remove line */
+        box-shadow: none !important;
+        transition: 0.35s ease;
         position: fixed;
         top: 0;
-        height: 100vh;
         z-index: 2000;
     }
 
+    /* Sidebar visible when hamburger clicked */
     .sidebar.open {
         left: 0 !important;
     }
 
-    .hamburger {
-        display: flex !important;
+    /* Remove hover-slide behavior */
+    .sidebar:hover {
+        left: -270px !important;
     }
 
-    .sidebar:hover {
-        left: -260px !important;
+    /* “PROFILE” Title */
+    .mobile-title {
+        font-size: 22px;
+        color: var(--lav);
+        text-align: left;
+        margin-bottom: 30px;
+        opacity: 0;
+        transform: translateX(-20px);
+        animation: slideIn 0.4s ease forwards;
+        animation-delay: 0.1s;
+    }
+
+    /* Menu animation */
+    .side-nav a {
+        font-size: 20px;
+        color: #fff;
+        padding: 15px 0;
+        text-decoration: none;
+        display: block;
+
+        opacity: 0;
+        transform: translateX(-20px);
+        animation: slideIn 0.5s ease forwards;
+    }
+
+    /* Delay each menu item animation */
+    .side-nav a:nth-child(1) { animation-delay: 0.15s; }
+    .side-nav a:nth-child(2) { animation-delay: 0.25s; }
+    .side-nav a:nth-child(3) { animation-delay: 0.35s; }
+    .side-nav a:nth-child(4) { animation-delay: 0.45s; }
+    .side-nav a:nth-child(5) { animation-delay: 0.55s; }
+
+    /* Keyframes */
+    @keyframes slideIn {
+        0% { opacity: 0; transform: translateX(-25px); }
+        100% { opacity: 1; transform: translateX(0); }
     }
 
 }
+
 .footer {
     text-align: center;
     margin-top: 40px;
