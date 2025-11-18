@@ -355,15 +355,6 @@ body {
         padding-left: 0;
     }
 
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        box-shadow: none;
-        border-right: none;
-        text-align: center;
-    }
-
     .hero {
         flex-direction: column;
         text-align: center;
@@ -372,6 +363,32 @@ body {
     .right-intro {
         padding-right: 0;
     }
+       
+    .sidebar {
+        left: -260px !important;
+        width: 260px;
+        background: #0d0b15;
+        padding: 60px 25px;
+        border-right: 2px solid rgba(183,138,255,0.3);
+        transition: 0.4s ease;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        z-index: 2000;
+    }
+
+    .sidebar.open {
+        left: 0 !important;
+    }
+
+    .hamburger {
+        display: flex !important;
+    }
+
+    .sidebar:hover {
+        left: -260px !important;
+    }
+
 }
 .footer {
     text-align: center;
@@ -382,5 +399,6 @@ body {
     opacity: 0.9;
     letter-spacing: 0.5px;
 }
+
 
 
