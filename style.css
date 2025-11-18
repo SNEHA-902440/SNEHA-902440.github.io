@@ -233,6 +233,7 @@ body {
     transform: translateY(-5px);
     transition: 0.35s ease;
 }
+
 .project-content.show {
     display: block;
     opacity: 1;
@@ -381,3 +382,5 @@ body {
     opacity: 0.9;
     letter-spacing: 0.5px;
 }
+
+
